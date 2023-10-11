@@ -17,13 +17,14 @@ Post.init(
         },
         post_description: {
             type: DataTypes.TEXT,
-        }
+        }, 
+        
     },
     {
         sequelize,
         freezeTableName: true,
         underscored: true, 
-        modelName: 'blog',
+        modelName: 'post',
     }
 )
 

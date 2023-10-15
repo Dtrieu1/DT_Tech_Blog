@@ -18,7 +18,14 @@ Post.init(
         post_description: {
             type: DataTypes.TEXT,
         }, 
-        
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'user',
+                key: 'id'
+            }
+        }
+
     },
     {
         sequelize,

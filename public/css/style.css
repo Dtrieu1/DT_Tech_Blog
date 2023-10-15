@@ -1,0 +1,40 @@
+.navbar-brand {
+    color: #fff;
+    margin-left: 2dvh;
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 35px;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+    font-size: 25px;
+}
+
+.nav {
+    margin-right: 2%;
+    font-size: 20px;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../photos/TechPhoto.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testing {
+    margin-left: 2%;
+    font-size: 20px;
+    color: #fff;
+}
+
+label,
+h2 {
+    color: #fff;
+}

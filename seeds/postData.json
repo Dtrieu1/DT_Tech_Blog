@@ -1,10 +1,14 @@
 [
     {
-        "post_title": "Is this the new apple?",
-        "post_description": "Just curious if anyone else can be the next tech company like apple"
+        "post_title": "Do I really need to change my password often?",
+        "post_description": "Yes, it is recommended to update your password regularly."
     },
     {
-        "post_title": "Why do you think Yahoo got purchased?",
-        "post_description": "Just curious if anyone still uses Yahoo or is that just old technology"
+        "post_title": "When traveling, is it safe to use your phone?",
+        "post_description": "It's important to be wary of what connection you are using for your phone"
+    },
+    {
+        "post_title": "Does it matter who buys my domain name",
+        "post_description": "It can create potential concerns if situations were to happen due to people tranisitioning"
     }
 ]

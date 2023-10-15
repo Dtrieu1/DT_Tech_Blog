@@ -2,9 +2,21 @@
 const router = require ("express").Router();
 const {User, Post} = require("../models");
 
+router.get("/", async(req, res) => {
+    try {
+        res.render("login", {
+            layout: 'main',
+            logged_in: req.session.logged_in 
+        })
+    }catch (err) {
+        res.status(500).json(err);
+      }
+})
+
 router.get("/login", async(req, res) => {
     try {
         res.render("login", {
+            layout: 'main',
             logged_in: req.session.logged_in 
         })
     }catch (err) {
@@ -15,6 +27,7 @@ router.get("/login", async(req, res) => {
 router.get("/signup", async(req, res) => {
     try {
         res.render("signup", {
+            layout: 'main',
             logged_in: req.session.logged_in 
         })
     }catch (err) {
@@ -25,6 +38,18 @@ router.get("/signup", async(req, res) => {
 router.get("/posts", async(req, res) => {
     try {
         res.render("posts", {
+            layout: 'main',
+            logged_in: req.session.logged_in 
+        })
+    }catch (err) {
+        res.status(500).json(err);
+      }
+})
+
+router.get("/submit", async(req, res) => {
+    try {
+        res.render("submit", {
+            layout: 'main',
             logged_in: req.session.logged_in 
         })
     }catch (err) {

@@ -22,3 +22,5 @@ The way you can best build this is to install dotenv, express, mysql2, and seque
 
 Bootstrap setup: https://www.youtube.com/watch?v=evSgm1bKdxU
 <br>
+Picture Background: https://www.pexels.com/photo/a-woman-in-a-tank-top-using-a-vr-headset-8721318/
+<br>

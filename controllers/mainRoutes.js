@@ -36,19 +36,34 @@ router.get("/signup", async(req, res) => {
 })
 
 router.get("/posts", async(req, res) => {
-    try {
+    // try {
+        const userData = await User.findOne({where: {
+            id: req.session.user_id
+           },
+           include: [{model: Post}]})
+        const user = userData.get({plain:true})
+        console.log(user)
         res.render("posts", {
+            user,
+            posts:user.posts,
             layout: 'main',
             logged_in: req.session.logged_in 
         })
-    }catch (err) {
-        res.status(500).json(err);
-      }
+    // }catch (err) {
+        // res.status(500).json(err);
+    //   }
 })
 
 router.get("/submit", async(req, res) => {
-    try {
+     try {
+        const userData = await User.findOne({where: {
+            id: req.session.user_id
+           },
+           include: [{model: Post}]})
+        const user = userData.get({plain:true})
+        console.log(user)
         res.render("submit", {
+            user,
             layout: 'main',
             logged_in: req.session.logged_in 
         })

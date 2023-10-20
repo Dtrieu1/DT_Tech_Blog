@@ -12,7 +12,7 @@ const loginFormHandler = async (event) => {
       });
 
       if (response.ok) {
-        document.location.replace("/");
+        document.location.replace("/submit");
       } else {
         alert("Failed to log in");
       }
@@ -23,3 +23,5 @@ const loginFormHandler = async (event) => {
 document
     .querySelector(".login-form")
     .addEventListener("submit", loginFormHandler);
+
+    //Can not figure out login process

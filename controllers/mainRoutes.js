@@ -4,7 +4,7 @@ const {User, Post} = require("../models");
 
 router.get("/", async(req, res) => {
     try {
-        res.render("login", {
+        res.render("blank", {
             layout: 'main',
             logged_in: req.session.logged_in 
         })

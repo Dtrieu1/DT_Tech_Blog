@@ -1,5 +1,4 @@
 <h2 class="text-center"> New Posts </h2>
-
-{{#each posts as |postCard|}}
-<h3>{{postCard.post_title}}</h3>
+{{#each post as |posts|}}
+{{>post-details}}
 {{/each}}

@@ -16,6 +16,7 @@ The way you can best build this is to install dotenv, express, mysql2, and seque
 
 ## Testing:
 
+We believe in making things simple to test - Please feel free to utilize this Heroku link at your utmost convenience: https://dt-tech-blog-4afd8046cc12.herokuapp.com/
 
 
 ## Resources

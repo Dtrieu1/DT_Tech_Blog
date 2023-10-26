@@ -20,21 +20,28 @@
                     </div>
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Home/Login</a>
+                            <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/posts">Check out Posts</a>
                         </li>
+
+                        {{#if logged_in}}
                         <li class="nav-item">
-                            {{#if logged_In}}
                             <a class="nav-link" href="/submit">Submit a Post</a>
-                            {{else}}
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="logout" href="/">Logout</a>
+                        </li>
+                        {{else}}
+                        <li class="nav-item">
                             <a class="nav-link" href="/login">Login before you can post!</a>
-                            {{/if}}
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="signup">Signup</a>
                         </li>
+                        {{/if}}
+
                     </ul>
                 </nav>
             </div>
@@ -48,7 +55,7 @@
             </div>
         </div>
     </div>
-    {{#if loggedIn}}
+    {{#if logged_in}}
     <script src="/js/logout.js"></script>
     {{/if}}
 </body>
